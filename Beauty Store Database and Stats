@@ -1,0 +1,9 @@
+CREATE TABLE store (id INTEGER, items TEXT, description TEXT, amount_sold INTEGER, price INTEGER);
+
+INSERT INTO store VALUES (1, "blush", "pink", 5, 10), (2, "lipstick", "red", 2, 15), (3, "foundation", "tan", 5, 25), (4, "eyeliner", "black", 3, 10), (5, "mascara", "black", 8, 15);
+
+SELECT * FROM store ORDER BY price DESC;
+
+SELECT SUM (price) FROM store;
+
+SELECT MIN (price) FROM store;
